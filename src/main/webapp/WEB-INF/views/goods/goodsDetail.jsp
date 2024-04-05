@@ -190,7 +190,7 @@ function fn_order_each_goods(goods_id,goods_title,goods_sales_price,fileName){
 				<tr>
 					<td class="fixed">배송안내</td>
 					<td class="fixed"><strong>[당일배송]</strong> 당일배송 서비스 시작!<br> <strong>[휴일배송]</strong>
-						휴일에도 배송받는 Bookshop</TD>
+						휴일에도 배송받는 bookStore</TD>
 				</tr>
 				<tr>
 					<td class="fixed">도착예정일</td>
