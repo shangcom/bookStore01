@@ -21,8 +21,16 @@ war {
 
 dependencies {
     // Spring
-    implementation 'org.springframework:spring-context:4.1.1.RELEASE'
-    implementation 'org.springframework:spring-webmvc:4.1.1.RELEASE'
+// https://mvnrepository.com/artifact/org.springframework/spring-context
+    implementation group: 'org.springframework', name: 'spring-context', version: '6.0.18'
+// https://mvnrepository.com/artifact/org.springframework/spring-web
+    implementation group: 'org.springframework', name: 'spring-web', version: '6.0.18'
+// https://mvnrepository.com/artifact/org.springframework/spring-core
+    implementation group: 'org.springframework', name: 'spring-core', version: '6.0.18'
+    implementation 'org.springframework:spring-webmvc:6.0.18'
+
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
 
     // Swagger 2 의존성
     implementation 'io.springfox:springfox-swagger2:2.9.2'
@@ -42,9 +50,12 @@ dependencies {
     implementation 'javax.inject:javax.inject:1'
 
     // Servlet
-    providedCompile 'javax.servlet:servlet-api:2.5'
-    providedCompile 'javax.servlet.jsp:jsp-api:2.1'
-    implementation 'javax.servlet:jstl:1.2'
+// https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api
+    providedCompile group: 'jakarta.servlet', name: 'jakarta.servlet-api', version: '6.0.0'
+
+    implementation group: 'jakarta.servlet.jsp', name: 'jakarta.servlet.jsp-api', version: '3.1.0'
+// https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api
+    implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '3.0.0'
 
     // Test
     testImplementation 'junit:junit:4.7'
@@ -55,13 +66,30 @@ dependencies {
     implementation 'mysql:mysql-connector-java:5.1.29'
 
     // MyBatis
-    implementation 'commons-beanutils:commons-beanutils:1.8.0'
-    implementation 'commons-dbcp:commons-dbcp:1.2.2'
-    implementation 'org.mybatis:mybatis:3.1.0'
-    implementation 'org.mybatis:mybatis-spring:1.1.0'
-    implementation 'cglib:cglib-nodep:2.2'
 
-    // Tiles
+
+    implementation 'commons-beanutils:commons-beanutils:1.8.0'
+/*    commons-beanutils는 Java Reflection과 Introspection을 사용하여,
+    동적으로 JavaBean의 프로퍼티를 조작하는 데 사용됩니다.*/
+
+            implementation 'commons-dbcp:commons-dbcp:1.2.2'
+/*    commons-dbcp는 데이터베이스 커넥션 풀(Database Connection Pool) 관리를 위한 라이브러리입니다.
+    데이터베이스 연결을 재사용함으로써 성능을 향상시키고, 리소스 사용을 최적화하는 데 도움을 줍니다.*/
+
+
+// https://mvnrepository.com/artifact/org.mybatis/mybatis
+    implementation group: 'org.mybatis', name: 'mybatis', version: '3.5.9'
+// https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
+    implementation group: 'org.mybatis', name: 'mybatis-spring', version: '2.0.7'
+// https://mvnrepository.com/artifact/cglib/cglib-nodep
+    implementation group: 'cglib', name: 'cglib-nodep', version: '3.3.0'
+/*    cglib은 코드 생성 라이브러리로, 주로 런타임에 객체의 프록시를 생성하거나 클래스를 확장하는 데 사용됩니다.
+Spring Framework에서는 주로 프록시 기반의 AOP(Aspect-Oriented Programming) 구현이나
+특정 bean에 대한 동적 서브클래스 생성에 사용됩니다.*/
+
+
+
+            // Tiles
     implementation 'org.apache.tiles:tiles-core:2.2.2'
     implementation 'org.apache.tiles:tiles-jsp:2.2.2'
     implementation 'org.apache.tiles:tiles-servlet:2.2.2'

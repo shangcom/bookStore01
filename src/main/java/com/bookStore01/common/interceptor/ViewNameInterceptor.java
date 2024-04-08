@@ -1,13 +1,17 @@
 package com.bookStore01.common.interceptor;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-public class ViewNameInterceptor extends  HandlerInterceptorAdapter{
-	   @Override
-	   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler){
+
+public class ViewNameInterceptor implements HandlerInterceptor {
+
+
+
+	@Override
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler){
 		   try {
 			String viewName = getViewName(request);
 			request.setAttribute("viewName", viewName);
