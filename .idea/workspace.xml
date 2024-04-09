@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="970a547d-c53c-418c-a127-cb0986a40cea" name="Changes" comment="AdminGoodsDAO에서 import org.springframework.dao.DataAccessException;&#10;사용 안하는 걸로 나오는 중." />
+    <list default="true" id="970a547d-c53c-418c-a127-cb0986a40cea" name="Changes" comment="AdminGoodsDAO에서 import org.springframework.dao.DataAccessException;&#10;사용 안하는 걸로 나오는 중.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ff218cc-7258-4c8b-9a79-ac88ad531a67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9ff218cc-7258-4c8b-9a79-ac88ad531a67.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookStore01/admin/goods/dao/AdminGoodsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookStore01/admin/goods/dao/AdminGoodsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookStore01/common/interceptor/ViewNameInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookStore01/common/interceptor/ViewNameInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/mybatis-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/mybatis-context.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -70,6 +81,10 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2eqDjQJJEYgDwymeNotdyR0AI3g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -85,6 +100,7 @@
     &quot;Tomcat Server.Tomcat 10.1.20.executor&quot;: &quot;Run&quot;,
     &quot;Tomcat Server.Tomcat 9.0.85.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/IdeaProjects/bookStore01/src/main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -95,7 +111,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -218,6 +234,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712296236114</updated>
       <workItem from="1712296237149" duration="10297000" />
+      <workItem from="1712623349685" duration="3306000" />
+      <workItem from="1712640631222" duration="1809000" />
     </task>
     <task id="LOCAL-00001" summary="jdbc 설정 변경 전">
       <option name="closed" value="true" />
@@ -243,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712566942265</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="AdminGoodsDAO에서 import org.springframework.dao.DataAccessException;&#10;사용 안하는 걸로 나오는 중.">
+      <option name="closed" value="true" />
+      <created>1712567148796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712567148796</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +280,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -33,7 +33,7 @@ public class ViewNameInterceptor implements HandlerInterceptor {
 	   
 	   private String getViewName(HttpServletRequest request) throws Exception {
 			String contextPath = request.getContextPath();
-			String uri = (String) request.getAttribute("javax.servlet.include.request_uri");
+		   String uri = (String) request.getAttribute("jakarta.servlet.include.request_uri");
 			if (uri == null || uri.trim().equals("")) {
 				uri = request.getRequestURI();
 			}

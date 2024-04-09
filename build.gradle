@@ -29,6 +29,12 @@ dependencies {
     implementation group: 'org.springframework', name: 'spring-core', version: '6.0.18'
     implementation 'org.springframework:spring-webmvc:6.0.18'
 
+    // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    implementation 'org.springframework:spring-jdbc:6.0.18'
+
+// https://mvnrepository.com/artifact/org.springframework/spring-tx 트랜잭션
+    implementation group: 'org.springframework', name: 'spring-tx', version: '6.0.18'
+
     // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
     implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
 
@@ -47,7 +53,9 @@ dependencies {
     runtimeOnly 'log4j:log4j:1.2.15'
 
     // @Inject
-    implementation 'javax.inject:javax.inject:1'
+/* implementation 'javax.inject:javax.inject:1'*/
+    implementation 'jakarta.inject:jakarta.inject-api:2.0.1'
+    /*스프링부트 3.x부터 javax 대신 jakarta 사용*/
 
     // Servlet
 // https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api
@@ -78,9 +86,11 @@ dependencies {
 
 
 // https://mvnrepository.com/artifact/org.mybatis/mybatis
-    implementation group: 'org.mybatis', name: 'mybatis', version: '3.5.9'
+    implementation group: 'org.mybatis', name: 'mybatis', version: '3.5.15'
+
 // https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
-    implementation group: 'org.mybatis', name: 'mybatis-spring', version: '2.0.7'
+    implementation group: 'org.mybatis', name: 'mybatis-spring', version: '3.0.3'
+
 // https://mvnrepository.com/artifact/cglib/cglib-nodep
     implementation group: 'cglib', name: 'cglib-nodep', version: '3.3.0'
 /*    cglib은 코드 생성 라이브러리로, 주로 런타임에 객체의 프록시를 생성하거나 클래스를 확장하는 데 사용됩니다.
@@ -90,9 +100,9 @@ Spring Framework에서는 주로 프록시 기반의 AOP(Aspect-Oriented Program
 
 
             // Tiles
-    implementation 'org.apache.tiles:tiles-core:2.2.2'
-    implementation 'org.apache.tiles:tiles-jsp:2.2.2'
-    implementation 'org.apache.tiles:tiles-servlet:2.2.2'
+    implementation 'org.apache.tiles:tiles-core:3.0.8'
+    implementation 'org.apache.tiles:tiles-jsp:3.0.8'
+    implementation 'org.apache.tiles:tiles-servlet:3.0.8'
 
     // Commons
     implementation 'commons-io:commons-io:2.4'
